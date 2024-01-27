@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OLcYO32KxSc+IhJNtVPAqXPz3xbA2IS6Zl0/pn9kACdmLYjzWBptqsBwRI9IMo6YgCmGv77a9b5Of6OoOj+b/g==",
+  "success": true,
+  "projectFilePath": "F:\\Projects\\CSharp\\Printer\\Printer\\Printer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Edu\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}
