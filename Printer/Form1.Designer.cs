@@ -35,6 +35,13 @@
             OFFSET2Textbox = new MaterialSkin.Controls.MaterialTextBox();
             materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
             PrintButton = new MaterialSkin.Controls.MaterialButton();
+            Printer1Checkbox = new CheckBox();
+            materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            Printer2Checkbox = new CheckBox();
+            StatusImpressora1Text = new Label();
+            label1 = new Label();
+            Printer1Name = new MaterialSkin.Controls.MaterialTextBox();
+            Printer2Name = new MaterialSkin.Controls.MaterialTextBox();
             SuspendLayout();
             // 
             // NumeroDeCaixasTextBox
@@ -171,7 +178,7 @@
             PrintButton.Depth = 0;
             PrintButton.HighEmphasis = true;
             PrintButton.Icon = null;
-            PrintButton.Location = new Point(259, 136);
+            PrintButton.Location = new Point(290, 136);
             PrintButton.Margin = new Padding(4, 6, 4, 6);
             PrintButton.MouseState = MaterialSkin.MouseState.HOVER;
             PrintButton.Name = "PrintButton";
@@ -184,6 +191,92 @@
             PrintButton.UseVisualStyleBackColor = true;
             PrintButton.Click += PrintButton_Click_1;
             // 
+            // Printer1Checkbox
+            // 
+            Printer1Checkbox.AutoSize = true;
+            Printer1Checkbox.Location = new Point(226, 31);
+            Printer1Checkbox.Name = "Printer1Checkbox";
+            Printer1Checkbox.Size = new Size(93, 19);
+            Printer1Checkbox.TabIndex = 15;
+            Printer1Checkbox.Text = "Impressora 1";
+            Printer1Checkbox.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel1
+            // 
+            materialLabel1.AutoSize = true;
+            materialLabel1.Depth = 0;
+            materialLabel1.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialLabel1.Location = new Point(217, 9);
+            materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialLabel1.Name = "materialLabel1";
+            materialLabel1.Size = new Size(88, 19);
+            materialLabel1.TabIndex = 16;
+            materialLabel1.Text = "Impressoras";
+            // 
+            // Printer2Checkbox
+            // 
+            Printer2Checkbox.AutoSize = true;
+            Printer2Checkbox.Location = new Point(226, 49);
+            Printer2Checkbox.Name = "Printer2Checkbox";
+            Printer2Checkbox.Size = new Size(93, 19);
+            Printer2Checkbox.TabIndex = 17;
+            Printer2Checkbox.Text = "Impressora 2";
+            Printer2Checkbox.UseVisualStyleBackColor = true;
+            // 
+            // StatusImpressora1Text
+            // 
+            StatusImpressora1Text.AutoSize = true;
+            StatusImpressora1Text.Location = new Point(314, 31);
+            StatusImpressora1Text.Name = "StatusImpressora1Text";
+            StatusImpressora1Text.Size = new Size(29, 15);
+            StatusImpressora1Text.TabIndex = 18;
+            StatusImpressora1Text.Text = "| OK";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(314, 50);
+            label1.Name = "label1";
+            label1.Size = new Size(29, 15);
+            label1.TabIndex = 19;
+            label1.Text = "| OK";
+            // 
+            // Printer1Name
+            // 
+            Printer1Name.AnimateReadOnly = false;
+            Printer1Name.BorderStyle = BorderStyle.None;
+            Printer1Name.Depth = 0;
+            Printer1Name.Font = new Font("Microsoft Sans Serif", 12F);
+            Printer1Name.Hint = "Nome da impressora 1";
+            Printer1Name.LeadingIcon = null;
+            Printer1Name.Location = new Point(226, 191);
+            Printer1Name.MaxLength = 50;
+            Printer1Name.MouseState = MaterialSkin.MouseState.OUT;
+            Printer1Name.Multiline = false;
+            Printer1Name.Name = "Printer1Name";
+            Printer1Name.Size = new Size(151, 50);
+            Printer1Name.TabIndex = 20;
+            Printer1Name.Text = "Plotter1";
+            Printer1Name.TrailingIcon = null;
+            // 
+            // Printer2Name
+            // 
+            Printer2Name.AnimateReadOnly = false;
+            Printer2Name.BorderStyle = BorderStyle.None;
+            Printer2Name.Depth = 0;
+            Printer2Name.Font = new Font("Microsoft Sans Serif", 12F);
+            Printer2Name.Hint = "Nome da impressora 2";
+            Printer2Name.LeadingIcon = null;
+            Printer2Name.Location = new Point(226, 247);
+            Printer2Name.MaxLength = 50;
+            Printer2Name.MouseState = MaterialSkin.MouseState.OUT;
+            Printer2Name.Multiline = false;
+            Printer2Name.Name = "Printer2Name";
+            Printer2Name.Size = new Size(151, 50);
+            Printer2Name.TabIndex = 21;
+            Printer2Name.Text = "Plotter2";
+            Printer2Name.TrailingIcon = null;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -191,7 +284,14 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.DimGray;
-            ClientSize = new Size(359, 563);
+            ClientSize = new Size(396, 313);
+            Controls.Add(Printer2Name);
+            Controls.Add(Printer1Name);
+            Controls.Add(label1);
+            Controls.Add(StatusImpressora1Text);
+            Controls.Add(Printer2Checkbox);
+            Controls.Add(materialLabel1);
+            Controls.Add(Printer1Checkbox);
             Controls.Add(PrintButton);
             Controls.Add(materialCheckbox1);
             Controls.Add(OFFSET2Textbox);
@@ -216,5 +316,12 @@
         private MaterialSkin.Controls.MaterialTextBox OFFSET2Textbox;
         private MaterialSkin.Controls.MaterialCheckbox materialCheckbox1;
         private MaterialSkin.Controls.MaterialButton PrintButton;
+        private CheckBox Printer1Checkbox;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private CheckBox Printer2Checkbox;
+        private Label StatusImpressora1Text;
+        private Label label1;
+        private MaterialSkin.Controls.MaterialTextBox Printer1Name;
+        private MaterialSkin.Controls.MaterialTextBox Printer2Name;
     }
 }

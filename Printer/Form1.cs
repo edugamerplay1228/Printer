@@ -62,6 +62,7 @@ namespace Printer
 
             size.Width = img.Width;
             size.Height = img.Height;
+
             e.PageSettings.PaperSize = size;
         }
 
@@ -94,11 +95,15 @@ namespace Printer
             {
                 OFFSET1Textbox.Visible = true;
                 OFFSET2Textbox.Visible = true;
+                Printer1Name.Visible = true;
+                Printer2Name.Visible = true;
             }
             else
             {
                 OFFSET1Textbox.Visible = false;
                 OFFSET2Textbox.Visible = false;
+                Printer1Name.Visible = false;
+                Printer2Name.Visible = false;
             }
 
         }
